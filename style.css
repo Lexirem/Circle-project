@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #514D67;
+    background-color: #E5E5E5;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 122px;
+    /* margin-top: 70px; */
+}
+
+.logo{
+    color: #072AC8;
+}
+
+.options > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-btn{
+    color: #E5E5E5;
+    background-color: #072AC8;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 36px;
+}
+
+
+
+@media screen and (min-width: 600px){
+    
+}
