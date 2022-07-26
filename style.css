@@ -124,13 +124,37 @@
   }
 }
 
+/* Section 1 mobile */
+.section1{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin: 50px 60px;
+}
+.section1-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 35px;
+    align-items: center;
+}
+
+.section1-text > h1{
+    font-size: 40px;
+}
+.section1-img{
+    display: none;
+}
+
+/* DESKTOP */
 @media (min-width: 700px) {
+  /* Navbar */
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 122px;
+    height: 120px;
   }
 
   .logo {
@@ -151,6 +175,42 @@
     background-color: #072ac8;
     justify-content: center;
     align-items: center;
-    padding: 15px 36px;
+    padding: 10px 30px;
+  }
+
+  /* Section 1 */
+  .section1{
+    display: flex;
+    flex-direction: row;
+    height: 580px;
+  }
+  .section1-text{
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 30px;
+  }
+  .section1-img{
+    display: block;
+    background-image: url("./images/hero-section/hero-image.png");
+    background-size: cover;
+    width: 50%;
+    height: 580px;
+  }
+  .section1-img > .img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .section1-img > .img2{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
   }
 }
