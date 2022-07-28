@@ -207,6 +207,8 @@ body{
   display: none;
 }
 
+/* Section 5 */
+
 /* DESKTOP */
 @media (min-width: 700px) {
   /* Navbar */
@@ -388,4 +390,7 @@ body{
     height: 60px;
     border-radius: 50%;
   }
+
+  /* Section 5 */
+  
 }
