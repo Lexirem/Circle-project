@@ -18,6 +18,7 @@
 }
 .logo {
     color: #072ac8;
+    font-size: 30px;
 }
 
 .menu {
@@ -120,7 +121,7 @@
     width: 50%;
     text-align: center;
     color: #e5e5e5;
-    padding: 15px 36px;
+    padding: 12px 36px;
   }
 }
 
@@ -128,7 +129,7 @@
 .section1{
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: auto;
     margin: 50px 60px;
 }
 .section1-text{
@@ -146,6 +147,18 @@
     display: none;
 }
 
+/* Section 2 mobile */
+.section2{
+    flex-wrap: wrap;
+    gap: 10px;    
+    width: 100%;
+    height: 50px;
+    margin: 15px 20px;
+}
+.section2 > img{
+    margin: 15px;
+}
+
 /* DESKTOP */
 @media (min-width: 700px) {
   /* Navbar */
@@ -159,6 +172,7 @@
 
   .logo {
     color: #072ac8;
+    font-size: 60px;
   }
 
   .menu {
@@ -168,6 +182,7 @@
     width: auto;
     list-style-type: none;
     gap: 20px;
+    font-size: 20px;
   }
 
   .nav-btn {
@@ -182,10 +197,10 @@
   .section1{
     display: flex;
     flex-direction: row;
-    height: 580px;
+    height: 630px;
   }
   .section1-text{
-    border: 1px solid yellow;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -197,7 +212,7 @@
     background-image: url("./images/hero-section/hero-image.png");
     background-size: cover;
     width: 50%;
-    height: 580px;
+    height: 630px;
   }
   .section1-img > .img1 {
     position: relative;
@@ -212,5 +227,17 @@
     right: 0;
     width: 150px;
     height: 150px;
+  }
+
+  /* Section 2 */
+  .section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    height: 80px;
+    width: 100%;
+    margin: 120px 10px;
   }
 }
