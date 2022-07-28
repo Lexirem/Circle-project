@@ -202,6 +202,11 @@ body{
   color: #072ac8;
 }
 
+/* Section 4 */
+.section4 {
+  display: none;
+}
+
 /* DESKTOP */
 @media (min-width: 700px) {
   /* Navbar */
@@ -312,14 +317,14 @@ body{
   .card {
     display: flex;
     flex-direction: column;
-    height: 550px;
+    height: 520px;
     width: 310px;
     gap: 20px;
     background-color: #fff;
   }
   .card > img {
     width: 310px;
-    height: 310px;
+    height: 300px;
   }
   .card-text {
     display: flex;
@@ -335,5 +340,52 @@ body{
   .card-text > a {
     text-decoration: none;
     color: #072ac8;
+  }
+
+  /* Section 4 */
+  .section4 {
+    display: block;
+    background-color: #292E47;
+    height: 600px;
+    margin: 60px;
+    background-image: url(./images/testimonial-section/orbit.png);
+    background-size: cover;
+  }
+  .section4 > img {
+    width: 90px;
+    height: 90px;
+  }
+  .section4-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+  }
+  .section4-text > h3 {
+    color: #F2F4FC;
+    font-size: 40px;
+  }
+  .section4-text > p {
+    color: #FFC600;
+    font-size: 24px;
+  }
+  .section4-client {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section4-client > div > p:first-child {
+    color: #A2D6F9;
+    font-size: 17px;
+  }
+  .section4-client > div > p:last-child {
+    color: #F4F6FC;
+    font-size: 13px;
+  }
+  .section4-client >img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
   }
 }
