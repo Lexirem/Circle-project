@@ -202,12 +202,12 @@ body{
   color: #072ac8;
 }
 
-/* Section 4 */
+/* Section 4 mobile*/
 .section4 {
   display: none;
 }
 
-/* Section 5 */
+/* Section 5 mobile*/
 .services-card {
   display: flex;
   flex-direction: column;
@@ -226,6 +226,39 @@ body{
   background-color: #D1EDFF;
   border-radius: 30%;
   padding: 15px;
+}
+
+/* Section 6 mobile*/
+.section6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFC600;
+  height: 250px;
+  width: 90%;
+  margin: 30px 25px;
+}
+.section6 > h3 {
+  font-size: 25px;
+}
+.section6 > form {
+  width: 60%;
+  height: 30%;
+}
+.email-form > input[type=email] {
+  background-image: url("./images/newsletter/icon/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  padding-left: 40px;
+  width: 140px;
+  height: 50px;
+}
+.email-form > input[type=button] {
+  background-color: #072ac8;
+  color:#FFFFFF;
+  height: 50px;
+  width: 100px;
 }
 
 /* DESKTOP */
@@ -454,5 +487,37 @@ body{
     margin-left: 30px;
     border-radius: 40%;
     padding: 20px;
+  }
+
+  /* Section 6 */
+  .section6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFC600;
+    height: 300px;
+    margin: 50px 70px;
+  }
+  .section6 > h3 {
+    font-size: 40px;
+  }
+  .section6 > form {
+    width: 50%;
+    height: 30%;
+  }
+  .email-form > input[type=email] {
+    background-image: url("./images/newsletter/icon/mail.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 60px;
+    width: 240px;
+    height: 50px;
+  }
+  .email-form > input[type=button] {
+    background-color: #072ac8;
+    color:#FFFFFF;
+    height: 50px;
+    width: 150px;
   }
 }
