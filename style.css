@@ -367,6 +367,7 @@ body{
   /* Section 4 */
   .section4 {
     display: block;
+    position: relative;
     background-color: #292E47;
     height: 600px;
     margin: 60px;
@@ -377,12 +378,37 @@ body{
     width: 90px;
     height: 90px;
   }
+  .section4 > img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+  }
+  .section4 > img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px;
+  }
+  .section4 > img:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+  }
+  .section4 > img:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 50px;
+  }
   .section4-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 400px;
+    padding: 100px 80px;
   }
   .section4-text > h3 {
     color: #F2F4FC;
