@@ -208,6 +208,20 @@ body{
 }
 
 /* Section 5 */
+.services-card {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 300px;
+  background-color: #fff;
+  margin: 15px;
+}
+.services-card > img {
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  left: 30px;
+}
 
 /* DESKTOP */
 @media (min-width: 700px) {
@@ -307,6 +321,7 @@ body{
   }
   .section3 > h2 {
     font-size: 40px;
+    margin-left: 50px;
   }
   .projects-cards {
     display: flex;
@@ -392,5 +407,19 @@ body{
   }
 
   /* Section 5 */
-  
+  .services-card {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    width: 300px;
+    background-color: #fff;
+    margin: 15px;
+    gap: 25px;
+  }
+  .services-card > img {
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
