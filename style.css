@@ -211,16 +211,21 @@ body{
 .services-card {
   display: flex;
   flex-direction: column;
-  height: 450px;
-  width: 300px;
+  height: 320px;
+  width: 280px;
   background-color: #fff;
   margin: 15px;
+  padding: 10px;
+  gap: 15px;
 }
 .services-card > img {
-  width: 50px;
-  height: 50px;
-  top: 30px;
-  left: 30px;
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: #D1EDFF;
+  border-radius: 30%;
+  padding: 15px;
 }
 
 /* DESKTOP */
@@ -417,9 +422,11 @@ body{
     gap: 25px;
   }
   .services-card > img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin-top: 30px;
     margin-left: 30px;
+    border-radius: 40%;
+    padding: 20px;
   }
 }
