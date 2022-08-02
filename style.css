@@ -119,6 +119,7 @@ body{
     color: #e5e5e5;
     padding: 12px 36px;
     text-decoration: none;
+    border: none;
   }
 }
 
@@ -259,15 +260,16 @@ body{
   color:#FFFFFF;
   height: 50px;
   width: 100px;
+  border: none;
 }
 
 /* Footer mobile */
 .footer {
-  /* position: absolute; */
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 80px 30px 50px 30px;
+  margin: 60px 30px 50px 30px;
   width: 90%;
   height: 150px;
   gap: 20px;
@@ -326,6 +328,49 @@ body{
   width: 100%;
 }
 
+/* Contact */
+.contact {
+  height: 400px;
+  justify-self: center;
+  margin: 30px 100px;
+}
+.contact > h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.contact-form > label {
+  font-size: 18px;
+}
+.contact-form > input[type=text] {
+  background-color: #6B708D1A 10%;
+  height: 40px;
+  width: 100%;
+}
+.contact-form > input[type=email] {
+  background-color: #6B708D1A 10%;
+  height: 40px;
+  width: 50%;
+}
+.contact-form > input[type=number] {
+  background-color: #6B708D1A 10%;
+  height: 40px;
+  width: 50%;
+}
+.contact-form > input[type=submit] {
+  background-color: #072ac8;
+  color:#FFFFFF;
+  height: 50px;
+  width: 100%;
+  border: none;
+}
+
+
 /* DESKTOP */
 @media (min-width: 700px) {
   /* Navbar */
@@ -359,6 +404,7 @@ body{
     align-items: center;
     padding: 10px 30px;
     text-decoration: none;
+    border: none;
   }
 
   /* Section 1 */
@@ -581,6 +627,7 @@ body{
     color:#FFFFFF;
     height: 50px;
     width: 150px;
+    border: none;
   }
 
   /* Footer */
@@ -652,5 +699,10 @@ body{
     justify-content: space-between;
     font-size: 20px;
     width: 100%;
+  }
+
+  /* Contact */
+  .contact-form {
+
   }
 }
