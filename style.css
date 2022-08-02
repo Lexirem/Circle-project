@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   font-family: "Roboto";
   color: #514d67;
   background-color: #e5e5e5;
@@ -18,8 +18,8 @@ body{
   padding: 1em;
 }
 .logo {
-    color: #072ac8;
-    font-size: 30px;
+  color: #072ac8;
+  font-size: 30px;
 }
 
 .menu {
@@ -125,69 +125,69 @@ body{
 
 /* Section 1 mobile */
 .section1 {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 50px 60px;
 }
 .section1-text {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    gap: 35px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 35px;
+  align-items: center;
 }
 .section1-text > h1 {
-    font-size: 42px;
+  font-size: 42px;
 }
 .section1-btns > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .section1-img {
-    display: none;
+  display: none;
 }
 
 /* Section 2 mobile */
 .section2 {
-    flex-wrap: wrap;
-    gap: 10px;    
-    width: 90%;
-    height: auto;
-    margin: 30px 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90%;
+  height: auto;
+  margin: 30px 20px;
 }
 .section2 > img {
-    margin: 15px;
+  margin: 15px;
 }
 
 /* Section 3 mobile */
 .section3 {
-    display: flex;
-    flex-direction: column;
-    margin: 60px 30px;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 30px;
+  height: auto;
 }
 .section3 > h2 {
-    font-size: 30px;
-  }
+  font-size: 30px;
+}
 .projects-cards {
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    height: auto;
-    margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+  margin-top: 20px;
 }
 .card {
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    width: 300px;
-    background-color: #fff;
-    margin: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 300px;
+  background-color: #fff;
+  margin: 15px;
 }
 .card > img {
-    width: 300px;
-    height: 300px;
-  }
+  width: 300px;
+  height: 300px;
+}
 .card-text {
   display: flex;
   flex-direction: column;
@@ -224,7 +224,7 @@ body{
   height: 40px;
   margin-top: 30px;
   margin-left: 30px;
-  background-color: #D1EDFF;
+  background-color: #d1edff;
   border-radius: 30%;
   padding: 15px;
 }
@@ -235,7 +235,7 @@ body{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #FFC600;
+  background-color: #ffc600;
   height: 250px;
   width: 90%;
   margin: 30px 25px;
@@ -247,7 +247,7 @@ body{
   width: 60%;
   height: 30%;
 }
-.email-form > input[type=email] {
+.email-form > input[type="email"] {
   background-image: url("./images/newsletter/icon/mail.svg");
   background-repeat: no-repeat;
   background-position: 10px;
@@ -255,9 +255,9 @@ body{
   width: 140px;
   height: 50px;
 }
-.email-form > input[type=button] {
+.email-form > input[type="button"] {
   background-color: #072ac8;
-  color:#FFFFFF;
+  color: #ffffff;
   height: 50px;
   width: 100px;
   border: none;
@@ -330,7 +330,7 @@ body{
 
 /* Contact */
 .contact {
-  height: 400px;
+  height: auto;
   justify-self: center;
   margin: 30px 100px;
 }
@@ -339,37 +339,62 @@ body{
   margin-bottom: 30px;
 }
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "email phone"
+    "message message"
+    "submit submit";
+  gap: 20px;
 }
-.contact-form > label {
+.name-div {
+  grid-area: name;
   font-size: 18px;
 }
-.contact-form > input[type=text] {
-  background-color: #6B708D1A 10%;
+.email-div {
+  grid-area: email;
+  font-size: 18px;
+}
+.phone-div {
+  grid-area: phone;
+  font-size: 18px;
+}
+.message-div {
+  grid-area: message;
+  font-size: 18px;
+}
+.name-div > input[type="text"] {
   height: 40px;
   width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
 }
-.contact-form > input[type=email] {
-  background-color: #6B708D1A 10%;
+.email-div > input[type="email"] {
   height: 40px;
-  width: 50%;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
 }
-.contact-form > input[type=number] {
-  background-color: #6B708D1A 10%;
+.phone-div > input[type="number"] {
   height: 40px;
-  width: 50%;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
 }
-.contact-form > input[type=submit] {
+.message-div > textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.contact-form > input[type="submit"] {
   background-color: #072ac8;
-  color:#FFFFFF;
+  color: #ffffff;
   height: 50px;
   width: 100%;
   border: none;
+  grid-area: submit;
 }
-
 
 /* DESKTOP */
 @media (min-width: 700px) {
@@ -509,7 +534,7 @@ body{
   .section4 {
     display: block;
     position: relative;
-    background-color: #292E47;
+    background-color: #292e47;
     height: 600px;
     margin: 60px;
     background-image: url(./images/testimonial-section/orbit.png);
@@ -552,11 +577,11 @@ body{
     padding: 100px 80px;
   }
   .section4-text > h3 {
-    color: #F2F4FC;
+    color: #f2f4fc;
     font-size: 40px;
   }
   .section4-text > p {
-    color: #FFC600;
+    color: #ffc600;
     font-size: 24px;
   }
   .section4-client {
@@ -565,14 +590,14 @@ body{
     gap: 10px;
   }
   .section4-client > div > p:first-child {
-    color: #A2D6F9;
+    color: #a2d6f9;
     font-size: 17px;
   }
   .section4-client > div > p:last-child {
-    color: #F4F6FC;
+    color: #f4f6fc;
     font-size: 13px;
   }
-  .section4-client >img {
+  .section4-client > img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -603,7 +628,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #FFC600;
+    background-color: #ffc600;
     height: 300px;
     margin: 50px 70px;
   }
@@ -614,7 +639,7 @@ body{
     width: 50%;
     height: 30%;
   }
-  .email-form > input[type=email] {
+  .email-form > input[type="email"] {
     background-image: url("./images/newsletter/icon/mail.svg");
     background-repeat: no-repeat;
     background-position: 10px;
@@ -622,9 +647,9 @@ body{
     width: 240px;
     height: 50px;
   }
-  .email-form > input[type=button] {
+  .email-form > input[type="button"] {
     background-color: #072ac8;
-    color:#FFFFFF;
+    color: #ffffff;
     height: 50px;
     width: 150px;
     border: none;
@@ -632,7 +657,7 @@ body{
 
   /* Footer */
   .footer {
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -689,7 +714,6 @@ body{
     box-shadow: 5px 5px 30px;
   }
   .project > p {
-
     width: 100%;
     margin-top: 20px;
   }
@@ -702,7 +726,71 @@ body{
   }
 
   /* Contact */
+  .contact {
+    height: auto;
+    justify-self: center;
+    margin: 50px 100px;
+  }
+  .contact > h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
   .contact-form {
-
+    display: grid;
+    grid-template-areas:
+      "name name"
+      "email phone"
+      "message message"
+      "submit submit";
+    gap: 30px;
+  }
+  .name-div {
+    grid-area: name;
+    font-size: 20px;
+  }
+  .email-div {
+    grid-area: email;
+    font-size: 20px;
+  }
+  .phone-div {
+    grid-area: phone;
+    font-size: 20px;
+  }
+  .message-div {
+    grid-area: message;
+    font-size: 20px;
+  }
+  .name-div > input[type="text"] {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .email-div > input[type="email"] {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .phone-div > input[type="number"] {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .message-div > textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .contact-form > input[type="submit"] {
+    background-color: #072ac8;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    grid-area: submit;
   }
 }
