@@ -376,7 +376,7 @@ body {
   margin-top: 10px;
   padding-left: 10px;
 }
-.phone-div > input[type="number"] {
+.phone-div > input[type="tel"] {
   height: 40px;
   width: 100%;
   margin-top: 10px;
@@ -774,7 +774,7 @@ body {
     margin-top: 10px;
     padding-left: 10px;
   }
-  .phone-div > input[type="number"] {
+  .phone-div > input[type="tel"] {
     height: 40px;
     width: 100%;
     margin-top: 10px;
