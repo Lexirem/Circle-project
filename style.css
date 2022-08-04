@@ -703,7 +703,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
-    margin: 50px 40px;
+    margin: 50px 50px;
   }
   .project > h2 {
     font-size: 50px;
