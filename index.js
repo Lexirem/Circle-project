@@ -1,11 +1,13 @@
 // Home Page JS
-// Home button
 
-
-// Project button
-
-
-// Services button
+function project(){
+  document.getElementsByClassName("card").addEventListener("click")
+}
+const projectTitle = params.title;
+const projectSubtitle = params.subtitle;
+var params = new Proxy (new URLSearchParams(window.location.href=`127.0.0.1:5500/project.html?title=${projectTitle}&subtitle=${projectSubtitle}`), {
+  get: (searchParams, prop) => searchParams.get(prop)
+})
 
 
 // Contact Page JS
@@ -39,11 +41,3 @@ function submitForm(e) {
 
 
 // Project Page JS
-// function project(){
-//   document.getElementsByClassName("card").addEventListener("click")
-// }
-// var params = new Proxy (new URLSearchParams(window.location.href=`127.0.0.1:5500/project.html?title=${projectTitle}&subtitle=${projectSubtitle}`), {
-//   get: (searchParams, prop) => searchParams.get(prop)
-// })
-// const projectTitle = params.title;
-// const projectSubtitle = params.subtitle;

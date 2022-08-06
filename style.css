@@ -29,12 +29,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
 }
-
+.menu > li > a {
+  text-decoration: none;
+}
 .menu-button-container {
   display: none;
   height: 100%;
@@ -44,11 +45,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 #menu-toggle {
   display: none;
 }
-
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -177,6 +176,7 @@ body {
   height: auto;
   margin-top: 20px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -248,6 +248,7 @@ body {
   width: 60%;
   height: 30%;
 }
+
 .email-form > input[type="email"] {
   background-image: url("./images/newsletter/icon/mail.svg");
   background-repeat: no-repeat;
@@ -321,6 +322,7 @@ body {
   width: 100%;
   margin-top: 20px;
 }
+
 .description {
   display: flex;
   flex-direction: row;
@@ -348,6 +350,7 @@ body {
     "submit submit";
   gap: 20px;
 }
+
 .name-div {
   grid-area: name;
   font-size: 18px;
@@ -364,6 +367,7 @@ body {
   grid-area: message;
   font-size: 18px;
 }
+
 .name-div > input[type="text"] {
   height: 40px;
   width: 100%;
@@ -421,6 +425,9 @@ body {
     list-style-type: none;
     gap: 20px;
     font-size: 20px;
+  }
+  .menu > li > a {
+    text-decoration: none;
   }
 
   .nav-btn {
@@ -497,6 +504,7 @@ body {
     font-size: 40px;
     margin-left: 50px;
   }
+
   .projects-cards {
     display: flex;
     flex-direction: row;
@@ -586,6 +594,7 @@ body {
     color: #ffc600;
     font-size: 24px;
   }
+
   .section4-client {
     display: flex;
     align-items: center;
@@ -641,6 +650,7 @@ body {
     width: 50%;
     height: 30%;
   }
+
   .email-form > input[type="email"] {
     background-image: url("./images/newsletter/icon/mail.svg");
     background-repeat: no-repeat;
@@ -719,6 +729,7 @@ body {
     width: 100%;
     margin-top: 20px;
   }
+
   .description {
     display: flex;
     flex-direction: row;
@@ -746,6 +757,7 @@ body {
       "submit submit";
     gap: 30px;
   }
+
   .name-div {
     grid-area: name;
     font-size: 20px;
@@ -762,6 +774,7 @@ body {
     grid-area: message;
     font-size: 20px;
   }
+  
   .name-div > input[type="text"] {
     height: 40px;
     width: 100%;
