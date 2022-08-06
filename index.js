@@ -1,18 +1,22 @@
-// Home Page JS
-
-function project(){
-  document.getElementsByClassName("card").addEventListener("click")
+// Subscribe JS
+document.getElementById("subscribe").addEventListener("click", subscribe);
+function subscribe(e){
+  e.preventDefault();
+  let mail = document.getElementById('email').value;
+  if (mail == ''){
+    alert('Please, introduce your email');
+    return;
+  } else {
+    alert('Thanks for contact us');
+  }
 }
-const projectTitle = params.title;
-const projectSubtitle = params.subtitle;
-var params = new Proxy (new URLSearchParams(window.location.href=`127.0.0.1:5500/project.html?title=${projectTitle}&subtitle=${projectSubtitle}`), {
-  get: (searchParams, prop) => searchParams.get(prop)
-})
-
 
 // Contact Page JS
 window.onload = () => {
-  document.getElementById("submit").addEventListener("click", submitForm);
+  const submit =  document.getElementById("submit");
+  if(submit){
+    submit.addEventListener("click", submitForm);
+  }
 }
 
 function submitForm(e) {
@@ -23,7 +27,7 @@ function submitForm(e) {
     return;
   };
   let email = document.getElementById('email').value;
-  if (email ==''){
+  if (email == ''){
     alert('Please, enter your email')
   };
   let phone = document.getElementById('tel').value;
@@ -40,4 +44,13 @@ function submitForm(e) {
 };
 
 
-// Project Page JS
+// Home Page to Project Page JS
+// document.getElementsByClassName("card").addEventListener("click", project)
+// function project(){
+  
+//   var params = new Proxy (new URLSearchParams(window.location.href=`127.0.0.1:5500/project.html?title=${title}&subtitle=${subtitle}`), {
+//     get: (searchParams, prop) => searchParams.get(prop)
+//   })
+//   const projectTitle = params.title;
+//   const projectSubtitle = params.subtitle;
+// }
