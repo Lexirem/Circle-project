@@ -1,5 +1,7 @@
 // Subscribe JS
-document.getElementById("subscribe").addEventListener("click", subscribe);
+window.onload = () => {
+  document.getElementById("subscribe").addEventListener("click", subscribe);
+}
 function subscribe(e){
   e.preventDefault();
   let mail = document.getElementById('email').value;
@@ -40,7 +42,6 @@ function submitForm(e) {
   } else {
     alert(`Thanks, ${user} for getting in touch with us, we'll contact you as soon as possible!!`);
   };
-  this.submit();
 };
 
 
