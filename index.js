@@ -1,18 +1,3 @@
-// Subscribe JS
-window.onload = () => {
-  document.getElementById("subscribe").addEventListener("click", subscribe);
-}
-function subscribe(e){
-  e.preventDefault();
-  let mail = document.getElementById('email').value;
-  if (mail == ''){
-    alert('Please, introduce your email');
-    return;
-  } else {
-    alert('Thanks for contact us');
-  }
-}
-
 // Contact Page JS
 window.onload = () => {
   const submit =  document.getElementById("submit");
@@ -43,6 +28,18 @@ function submitForm(e) {
     alert(`Thanks, ${user} for getting in touch with us, we'll contact you as soon as possible!!`);
   };
 };
+
+// Subscribe JS
+function subscribe(e){
+  e.preventDefault();
+  let mail = document.getElementById('email').value;
+  if (mail == ''){
+    alert('Please, introduce your email');
+    return;
+  } else {
+    alert('Thanks for contact us');
+  }
+}
 
 
 // Home Page to Project Page JS
